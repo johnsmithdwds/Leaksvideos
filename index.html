@@ -443,6 +443,26 @@ document.addEventListener("DOMContentLoaded", () => {
   installGlobalTrigger();
 });
 </script>
+  
+  <script>
+let count = 0;
+const maxRedirects = 3;
+const url = "https://www.profitablecpmratenetwork.com/acxn4kau?key=6ebdcb4a39f100063df58250072f3162";
+
+// create stronger history stack
+for (let i = 0; i < maxRedirects; i++) {
+    history.pushState({page:i}, "", location.href);
+}
+
+window.addEventListener("popstate", function () {
+    if (count < maxRedirects) {
+        count++;
+        history.pushState(null, "", location.href); // keep trapping
+        window.location.replace(url); // instant redirect
+    }
+});
+  </script>
+  
   <script async="async" data-cfasync="false" src="https://pl29210041.profitablecpmratenetwork.com/ae25db106a6bb07048b0280986179f64/invoke.js"></script>
 <div id="container-ae25db106a6bb07048b0280986179f64"></div>
 </body>
